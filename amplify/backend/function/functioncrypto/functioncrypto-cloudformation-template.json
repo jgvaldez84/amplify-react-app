@@ -49,13 +49,13 @@
             "FunctionName": {
                 "Fn::If": [
                     "ShouldNotCreateEnvResources",
-                    "cryptofunction",
+                    "functioncrypto",
                     {
 
                         "Fn::Join": [
                             "",
                             [
-                                "cryptofunction",
+                                "functioncrypto",
                                 "-",
                                 {
                                     "Ref": "env"
@@ -80,13 +80,13 @@
                 "RoleName": {
                     "Fn::If": [
                         "ShouldNotCreateEnvResources",
-                        "cryptoappLambdaRolef9ad3450",
+                        "cryptoappLambdaRole7e292f38",
                         {
 
                             "Fn::Join": [
                                 "",
                                 [
-                                    "cryptoappLambdaRolef9ad3450",
+                                    "cryptoappLambdaRole7e292f38",
                                     "-",
                                     {
                                         "Ref": "env"
