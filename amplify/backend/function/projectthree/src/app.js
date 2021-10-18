@@ -33,6 +33,7 @@ app.get('/born', function(req, res){
     born
   })
 })
+
 /**********************
  * Example get method *
  **********************/
