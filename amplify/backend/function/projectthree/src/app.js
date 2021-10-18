@@ -26,11 +26,11 @@ app.use(function(req, res, next) {
 });
 
 app.get('/born', function(req, res){
-  const born = [
+  const users = [
     {login: 'jgvaldez84', created_at: "2021-04-30T14:02:25Z"}
   ]
   res.json({
-    born
+    users
   })
 })
 /**********************
