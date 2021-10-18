@@ -10,8 +10,12 @@ const ProjectThree = () => {
   const [users, updateUsers] = useState([]);
   //Define function to call API
   async function fetchUsers() {
-    const data = await API.get("projectthree", "/born");
+    console.log("got here");
+    const data = await API.get("cryptoapi", "/born");
+    console.log(data);
+    console.log(data.users);
     updateUsers(data.users);
+
   }
   //call fetchUsers function when component loads
   useEffect(() => {
@@ -20,14 +24,8 @@ const ProjectThree = () => {
 
   return (
     <>
-    {
-    users.map((user, index) => (
-    <div key={index}>
-    <h2>The github user{user.login}</h2>
-        </div>
-    ))
-    }
+      <h2>The github user{users.login} was created on {users.created_at}</h2>
     </>
-    );
+  );
 };
 export default ProjectThree;

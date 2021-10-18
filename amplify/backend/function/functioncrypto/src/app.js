@@ -44,6 +44,7 @@ start=${start}&limit=${limit}`;
     })
     .catch((err) => res.json({ error: err }));
 });
+
 /**********************
  * Example get method *
  **********************/

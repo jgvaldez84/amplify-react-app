@@ -35,6 +35,7 @@ const [loading, updateLoading] = useState(true);
   useEffect(() => {
     fetchCoins();
   }, []);
+
   return (
     <div className="App">
 
