@@ -1,35 +1,55 @@
 {
-  "paths": [
-    {
-      "name": "/coins",
-      "lambdaFunction": "functioncrypto",
-      "privacy": {
-        "open": true
-      },
-      "policyResourceName": "/coins"
-    }
-  ],
-  "resourceName": "cryptoapi",
-  "apiName": "cryptoapi",
-  "functionArns": [
-    {
-      "lambdaFunction": "functioncrypto"
-    }
-  ],
-  "privacy": {
-    "auth": 0,
-    "unauth": 0,
-    "authRoleName": "amplify-cryptoapp-dev-93234-authRole",
-    "unAuthRoleName": "amplify-cryptoapp-dev-93234-unauthRole"
-  },
-  "dependsOn": [
-    {
-      "category": "function",
-      "resourceName": "functioncrypto",
-      "attributes": [
-        "Name",
-        "Arn"
-      ]
-    }
-  ]
+    "paths": [
+        {
+            "name": "/coins",
+            "lambdaFunction": "functioncrypto",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/coins"
+        },
+        {
+            "name": "/born",
+            "lambdaFunction": "projectthree",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/born"
+        }
+    ],
+    "resourceName": "cryptoapi",
+    "apiName": "cryptoapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "functioncrypto"
+        },
+        {
+            "lambdaFunction": "projectthree"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-cryptoapp-dev-93234-authRole",
+        "unAuthRoleName": "amplify-cryptoapp-dev-93234-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "functioncrypto",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "projectthree",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "32a9097c"
 }
