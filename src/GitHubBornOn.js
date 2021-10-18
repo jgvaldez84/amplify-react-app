@@ -9,7 +9,7 @@ const ProjectThree = () => {
   // Create user variable and set to empty array
   const [users, updateUsers] = useState([]);
   //Define function to call API
-  async function fetchUsers() {
+  const fetchUsers = async() =>  {
     console.log("got here");
     const data = await API.get("cryptoapi", "/born");
     console.log(data);
@@ -23,9 +23,9 @@ const ProjectThree = () => {
   }, []);
 
   return (
-    <>
-      <h2>The github user{users.login} was created on {users.created_at}</h2>
-    </>
+    <div className="App">
+      <h2>The github user {users.login} was created on {users.created_at}</h2>
+    </div>
   );
 };
 export default ProjectThree;
