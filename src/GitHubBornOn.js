@@ -9,23 +9,30 @@ const ProjectThree = () => {
   // Create user variable and set to empty array
   const [users, updateUsers] = useState([]);
   //Define function to call API
-  const fetchUsers = async() =>  {
+  const fetchUsers = async () =>  {
     console.log("got here");
     const data = await API.get("cryptoapi", "/born");
     console.log(data);
-
-    updateUsers(data.users);
-
+    console.log(data.born.login)
+    console.log(data.born.created_at)
+    console.log(users)
+    console.log(data.born.login)
+   updateUsers(data);
   }
+  
   //call fetchUsers function when component loads
   useEffect(() => {
     fetchUsers();
   }, []);
 
   return (
+
     <div className="App">
+        
       <h2>The github user {users.login} was created on {users.created_at}</h2>
     </div>
   );
 };
 export default ProjectThree;
+
+ 

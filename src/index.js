@@ -11,7 +11,7 @@ Amplify.configure(config);
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <ProjectThree /> */}
+    <ProjectThree />
   </React.StrictMode>,
   document.getElementById('root')
 );
