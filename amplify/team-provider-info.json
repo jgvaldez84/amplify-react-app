@@ -19,7 +19,7 @@
         },
         "projectthree": {
           "deploymentBucketName": "amplify-cryptoapp-dev-93234-deployment",
-          "s3Key": "amplify-builds/projectthree-647130717a625776742f-build.zip"
+          "s3Key": "amplify-builds/projectthree-656747766a4a48753246-build.zip"
         }
       }
     }

@@ -13,7 +13,7 @@ const ProjectThree = () => {
     console.log("got here");
     const data = await API.get("cryptoapi", "/born");
     console.log(data);
-    console.log(data.users);
+
     updateUsers(data.users);
 
   }
