@@ -29,7 +29,7 @@ app.get("/born", function (req, res) {
   axios
     .get(url)
     .then((response) => {
-      res.json({ born: response.data });
+      res.json({ users: response.data });
     })
     .catch((err) => res.json({ error: err }));
 });
