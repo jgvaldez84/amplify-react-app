@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/amplify-react-app/static/css/main.d1b05096.chunk.css",
+    "main.js": "/amplify-react-app/static/js/main.7303deb6.chunk.js",
+    "main.js.map": "/amplify-react-app/static/js/main.7303deb6.chunk.js.map",
+    "runtime-main.js": "/amplify-react-app/static/js/runtime-main.54b78c69.js",
+    "runtime-main.js.map": "/amplify-react-app/static/js/runtime-main.54b78c69.js.map",
+    "static/js/2.a5af855a.chunk.js": "/amplify-react-app/static/js/2.a5af855a.chunk.js",
+    "static/js/2.a5af855a.chunk.js.map": "/amplify-react-app/static/js/2.a5af855a.chunk.js.map",
+    "static/js/3.f21fe095.chunk.js": "/amplify-react-app/static/js/3.f21fe095.chunk.js",
+    "static/js/3.f21fe095.chunk.js.map": "/amplify-react-app/static/js/3.f21fe095.chunk.js.map",
+    "index.html": "/amplify-react-app/index.html",
+    "precache-manifest.899b4ee25a9c8d32642e33a2b216d914.js": "/amplify-react-app/precache-manifest.899b4ee25a9c8d32642e33a2b216d914.js",
+    "service-worker.js": "/amplify-react-app/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/amplify-react-app/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.a5af855a.chunk.js.LICENSE.txt": "/amplify-react-app/static/js/2.a5af855a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54b78c69.js",
+    "static/js/2.a5af855a.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.7303deb6.chunk.js"
+  ]
+}
