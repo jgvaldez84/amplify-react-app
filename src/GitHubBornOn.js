@@ -12,12 +12,8 @@ const ProjectThree = () => {
   const fetchUsers = async () =>  {
     console.log("got here");
     const data = await API.get("cryptoapi", "/born");
-    console.log(data);
-    console.log(data.born.login)
-    console.log(data.born.created_at)
-    console.log(users)
-    console.log(data.born.login)
-   updateUsers(data);
+
+   updateUsers(data.users);
   }
   
   //call fetchUsers function when component loads
