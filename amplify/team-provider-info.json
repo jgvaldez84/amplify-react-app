@@ -25,7 +25,8 @@
       "hosting": {
         "amplifyhosting": {
           "appId": "d2vncvrsjo2vrp",
-          "type": "manual"
+          "type": "manual",
+          "s3Key": "amplify-builds/projectthree-53525062675472764c43-build.zip"
         }
       }
     }

@@ -22,6 +22,14 @@ app.use(function (req, res, next) {
   next();
 });
 
+// app.get("/born", function (req, res) {
+//   const users = { login: "jgvaldez84", created_at: "2021-04-30T14:02:25Z" }
+//   res.json({
+//     users
+//   })
+// })
+
+
 const axios = require("axios");
 app.get("/born", function (req, res) {
   let url = 'https://api.github.com/users/jgvaldez84';

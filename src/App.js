@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 // Import useState and useEffect hooks from React
 import React, { useState, useEffect } from "react";
